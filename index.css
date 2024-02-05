@@ -1,0 +1,207 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    --blue-color:#140c5c;
+}
+.Content-Section{
+    min-height: 30vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Content-Section h1{
+    color: var(--blue-color);
+    align-content: center;
+    padding:20px;
+}
+.Content-Section h2{
+    margin:20px;
+    padding:10px;
+    background-color: var(--blue-color);
+    color:#fff;
+}
+.Footer-Section{
+    background-color: var(--blue-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    width:100%;
+    justify-content: space-between;
+}
+.Footer-Section .First-Section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:30px 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.Footer-logo a {
+    color:#fff;
+    font-size: 2rem;
+    text-decoration: none;
+    vertical-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Footer-logo a i{
+    margin-right: 10px;;
+    color:#fff
+}
+.First-Section .Social-Media{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.Social-Media a{
+    margin-left: 20px;
+    height:40px;
+    width: 40px;
+    background-color: red;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+}
+.Social-Media a:hover{
+    text-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 2px #fff;
+}
+.Social-Media a i{
+    color:#fff;
+    font-size: 1.2rem;
+}
+.Footer-Section .Second-Section{
+    padding:50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Second-Section .menu-columns{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    flex-wrap: wrap;
+}
+.menu-columns h1{
+    color:#fff;
+    padding:0 0 5px 0;
+    margin:15px 0;   
+    font-weight: 100; 
+    position: relative; 
+}
+.menu-columns h1::before{
+    content: '';
+    height:2px;
+    width:40px;
+    background-color: #fff;
+    position: absolute;
+    left:3px;
+    bottom:-2px;
+}
+.menu-columns ul a {
+    text-decoration: none;
+}
+.menu-columns ul a li{
+    list-style: none;
+    color:#fff;
+    padding:15px 0 0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+}
+.menu-columns ul li:hover {
+    text-decoration: underline;
+}
+.subscribe-column form{
+    display: flex;
+    flex-direction: column;
+    padding:20px 0;
+    flex-wrap: wrap;
+}
+.subscribe-column form input[type=text]{
+    padding:10px;
+    margin-bottom:10px;
+    background-color: transparent;
+    border:2px solid #fff;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    color:#fff
+}
+.subscribe-column form input[type=text]::placeholder{
+    color:#fff
+}
+.subscribe-column form input[type=submit]{
+    padding:10px;
+    margin-bottom:20px;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    color:var(--blue-color);
+    cursor: pointer;
+    border:none;
+    opacity: 0.8;
+}
+.subscribe-column form input[type=submit]:hover{
+    opacity: 1;
+}
+.Footer-Section .copyright-section{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #080424;
+    color: #fff;
+}
+.copyright-section .terms-policy-sect a{
+    padding:0 10px;
+    text-decoration: none;
+    color:#aaa;
+}
+.copyright-section .terms-policy-sect a:hover{
+    color:#fff;
+}
+@media screen and (max-width : 705px){
+    .Footer-Section .First-Section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:30px 20px;
+    }
+    .Footer-Section .Second-Section{
+        padding:10px;
+    }
+    .First-Section .Social-Media{
+        padding:50px 0;
+        flex-wrap: wrap;
+    }
+    .First-Section .Social-Media a{
+        margin:15px;
+    }
+    .subscribe-column form{
+        flex-wrap: wrap;
+    }
+    .Footer-Section .copyright-section{
+        flex-direction: column;
+        padding:10px;
+    }
+    .copyright-section p{
+        padding:20px 0;
+    }
+    .copyright-section .terms-policy-sect a{
+        padding:10px;
+    }
+    .subscribe-column form input[type=submit]{
+        padding: 5px;
+    }
+    .subscribe-column form input[type=text]{
+        padding: 5px;
+    }
+    .subscribe-column form{
+        padding:0;
+    }
+}
